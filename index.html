@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025년 연간 호스팅 보고서</title>
+    <title>2025년 Annual Report</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
@@ -226,15 +226,16 @@
 
         /* Message Box */
         .message-box {
-            background: var(--gray-900);
-            color: white;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            color: var(--gray-800);
             padding: 24px;
-            border-radius: 8px;
-            font-family: 'Consolas', 'Monaco', monospace;
-            font-size: 0.875rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+            font-size: 0.9rem;
             line-height: 1.8;
             white-space: pre-wrap;
             margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
         }
 
         /* Comparison */
@@ -440,19 +441,19 @@
         <div class="nav-inner">
             <a href="#summary">Executive Summary</a>
             <a href="#comparison">2024 vs 2025</a>
-            <a href="#charts">지표 시각화</a>
+            <a href="#charts">핵심 지표 비교</a>
             <a href="#segment">세그먼트 분석</a>
             <a href="#products">주요 업무</a>
             <a href="#challenges">구조적 과제</a>
-            <a href="#direction">2026 방향</a>
         </div>
     </nav>
 
     <!-- Header -->
     <header class="header">
-        <h1>2025년 연간 호스팅 보고서</h1>
-        <p class="subtitle">카페24 호스팅팀</p>
-        <p class="version">Draft v3 | 데이터 기준: 2024.01 ~ 2025.12 (1-12월)</p>
+        <h1>2025년 Annual Report</h1>
+        <p class="subtitle">호스팅플랫폼팀</p>
+        <p class="version">Draft v4 | 데이터 기준: 2024.01 ~ 2025.12 (1-12월)</p>
+        <p class="version" style="margin-top: 8px;"><a href="https://data-eye.hanpda.com/private_grafana/d/df98wpjg1uwaoa/e596a45d-2829-5480-9370-4a925ce326a5?orgId=8" target="_blank" style="color: rgba(255,255,255,0.9); text-decoration: underline;">📊 대시보드 바로가기</a></p>
     </header>
 
     <div class="container">
@@ -461,9 +462,9 @@
             <h2 class="section-title">Executive Summary</h2>
 
             <div class="summary-box">
-                <h3>2025년 = "Foundation 강화의 해"</h3>
-                <p><strong>2024년 "방어의 해" → 2025년 "Foundation 강화의 해" → 2026년 "볼륨 기반 ARPU 성장의 해"</strong><br>
-                뉴아우토반 출시로 볼륨 기반을 다지고, 2026년 성장을 위한 Foundation을 강화한 해</p>
+                <h3>2025년 = "기반 강화의 해"</h3>
+                <p><strong>2024년 "방어의 해" → 2025년 "기반 강화의 해" → 2026년 "볼륨 기반 ARPU 성장의 해"</strong><br>
+                웹호스팅 주력상품 리뉴얼로 볼륨 기반을 다지고, 2026년 성장을 위한 기반을 강화한 해</p>
             </div>
 
             <h3 style="margin-bottom: 16px; color: var(--gray-700);">핵심 성과 (1-12월 기준)</h3>
@@ -495,20 +496,13 @@
                 </div>
             </div>
 
-            <div class="message-box">2025년 = Foundation 다지기
+            <div class="message-box"><strong>2025년 주요 업무가 만든 성과</strong>
 
-┌─────────────────────────────────────────────────────────────┐
-│  기반이 탄탄해야, 그 위에서 성장할 수 있다                     │
-│  Foundation(안정적 고객 기반) × 신규 기회 = 수익 성장          │
-└─────────────────────────────────────────────────────────────┘
-
-2025년 주요 업무가 만든 성과:
-
-[뉴아우토반] ─────────→ 신규 사용자 +8.2%, 라이브 사용자 +1.4%
-[퀵서버 Pro] ─────────→ 고성능 서버에 대한 지속 수요 확인
-[WP 라인업 완성] ─────→ 애드센스 WP, WP VPS 출시 → 거래액 +27%
+[뉴아우토반 출시] ────→ 신규 사용자 +8.2% YoY, 라이브 사용자 +1.4% YoY
+[퀵서버 Pro 출시] ────→ 고성능 서버에 대한 지속 수요 확인
+[WP 라인업 완성] ─────→ 애드센스 WP, WP VPS 출시 → 거래액 +27% YoY
 [단독웹 클라우드] ────→ 클라우드 기반 인프라 확장
-[기대연장율 개선] ────→ 83.1% 달성 (+0.5%p) → Foundation 강화</div>
+[기대연장율 개선] ────→ 83.1% 달성 (+0.5%p YoY) → 기반 강화</div>
 
             <h3 style="margin: 24px 0 16px; color: var(--gray-700);">2025년 → 2026년 연결</h3>
             <div class="table-container">
@@ -521,23 +515,23 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>거래액 +2.3% (선행지표)</td>
+                            <td>거래액 +2.3% YoY (선행지표)</td>
                             <td>실매출 성장 반영</td>
                         </tr>
                         <tr>
-                            <td>웹호스팅 주력상품 +5.4%</td>
+                            <td>웹호스팅 주력상품 +5.4% YoY</td>
                             <td>볼륨 성장 견인</td>
                         </tr>
                         <tr>
-                            <td>신규 사용자 +8.2%</td>
+                            <td>신규 사용자 +8.2% YoY</td>
                             <td>업셀 타겟 풀 확대</td>
                         </tr>
                         <tr>
-                            <td>라이브 사용자 +1.4%</td>
+                            <td>라이브 사용자 +1.4% YoY</td>
                             <td>연장 매출 기반 확대</td>
                         </tr>
                         <tr>
-                            <td>신규 ARPPU -11%</td>
+                            <td>신규 ARPPU -11% YoY</td>
                             <td><strong style="color: var(--danger);">업셀로 ARPU 회복 과제</strong></td>
                         </tr>
                     </tbody>
@@ -557,10 +551,10 @@
                 <div class="year-card year-2024">
                     <h4>2024년 = "방어의 해"</h4>
                     <table>
-                        <tr><td>실매출</td><td class="text-right">399.3억 <span class="tag tag-success">+1.2%</span></td></tr>
-                        <tr><td>전체 거래액</td><td class="text-right">404.4억 <span class="tag tag-warning">+0.6%</span></td></tr>
-                        <tr><td>신규 사용자</td><td class="text-right">59,971명 <span class="tag tag-danger">-12.3%</span></td></tr>
-                        <tr><td>라이브 사용자 (12월)</td><td class="text-right">244,553명 <span class="tag tag-warning">-0.1%</span></td></tr>
+                        <tr><td>실매출</td><td class="text-right">399.3억 <span class="tag tag-success">+1.2% YoY</span></td></tr>
+                        <tr><td>전체 거래액</td><td class="text-right">404.4억 <span class="tag tag-warning">+0.6% YoY</span></td></tr>
+                        <tr><td>신규 사용자</td><td class="text-right">59,971명 <span class="tag tag-danger">-12.3% YoY</span></td></tr>
+                        <tr><td>라이브 사용자 (12월)</td><td class="text-right">244,553명 <span class="tag tag-warning">-0.1% YoY</span></td></tr>
                     </table>
                     <p style="margin-top: 12px; font-size: 0.875rem; color: #991b1b;">
                         ⚠️ 신규 사용자 급감 → 고객 풀 축소 경고
@@ -568,67 +562,24 @@
                 </div>
 
                 <div class="year-card year-2025">
-                    <h4>2025년 = "Foundation 강화의 해"</h4>
+                    <h4>2025년 = "기반 강화의 해"</h4>
                     <table>
-                        <tr><td>실매출</td><td class="text-right">400.9억 <span class="tag tag-warning">+0.4%</span></td></tr>
-                        <tr><td>전체 거래액</td><td class="text-right">413.8억 <span class="tag tag-success">+2.3%</span></td></tr>
-                        <tr><td>신규 사용자</td><td class="text-right">64,889명 <span class="tag tag-success">+8.2%</span></td></tr>
-                        <tr><td>라이브 사용자 (12월)</td><td class="text-right">248,064명 <span class="tag tag-success">+1.4%</span></td></tr>
+                        <tr><td>실매출</td><td class="text-right">400.9억 <span class="tag tag-warning">+0.4% YoY</span></td></tr>
+                        <tr><td>전체 거래액</td><td class="text-right">413.8억 <span class="tag tag-success">+2.3% YoY</span></td></tr>
+                        <tr><td>신규 사용자</td><td class="text-right">64,889명 <span class="tag tag-success">+8.2% YoY</span></td></tr>
+                        <tr><td>라이브 사용자 (12월)</td><td class="text-right">248,064명 <span class="tag tag-success">+1.4% YoY</span></td></tr>
                     </table>
                     <p style="margin-top: 12px; font-size: 0.875rem; color: #166534;">
-                        ✅ 뉴아우토반으로 볼륨 기반 확보
+                        ✅ 웹호스팅 주력상품 스펙업으로 볼륨 기반 확보
                     </p>
                 </div>
             </div>
 
-            <div class="card" style="margin-top: 24px;">
-                <div class="card-header">
-                    <h2>핵심 차이 요약</h2>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>관점</th>
-                                <th>2024년</th>
-                                <th>2025년</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>라이브 사용자</strong></td>
-                                <td><span class="tag tag-danger">순감소 전환 (-0.1%)</span></td>
-                                <td><span class="tag tag-success">반등 (+1.4%)</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>신규 유입</strong></td>
-                                <td><span class="tag tag-danger">급감 (-12.3%)</span></td>
-                                <td><span class="tag tag-success">회복 (+8.2%)</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>기대연장율</strong></td>
-                                <td><span class="tag tag-warning">등락 반복 (77~84%)</span></td>
-                                <td><span class="tag tag-success">안정적 상승 (82~85%)</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>거래액</strong></td>
-                                <td><span class="tag tag-warning">정체 (+0.6%)</span></td>
-                                <td><span class="tag tag-success">성장 (+2.3%)</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>전체 기조</strong></td>
-                                <td>방어적 (하락 방지)</td>
-                                <td>기반 강화 (Foundation 다지기)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
+            </section>
 
         <!-- Charts Section -->
         <section id="charts" class="section">
-            <h2 class="section-title">지표 시각화</h2>
+            <h2 class="section-title">핵심 지표 비교</h2>
 
             <div class="chart-row">
                 <div class="card">
@@ -639,6 +590,9 @@
                     <div class="chart-container">
                         <canvas id="liveUsersChart"></canvas>
                     </div>
+                    <p style="margin-top: 12px; font-size: 0.875rem; color: var(--gray-600); text-align: center;">
+                        2024년 순감소 전환 (-0.1%) → 2025년 반등 (+1.4%) | 12월 기준 248,064명
+                    </p>
                 </div>
 
                 <div class="card">
@@ -649,6 +603,9 @@
                     <div class="chart-container">
                         <canvas id="newUsersChart"></canvas>
                     </div>
+                    <p style="margin-top: 12px; font-size: 0.875rem; color: var(--gray-600); text-align: center;">
+                        2024년 급감 (-12.3%) → 2025년 회복 (+8.2%) | 연간 64,889명
+                    </p>
                 </div>
             </div>
 
@@ -661,6 +618,10 @@
                     <div class="chart-container">
                         <canvas id="revenueChart"></canvas>
                     </div>
+                    <p style="margin-top: 12px; font-size: 0.875rem; color: var(--gray-600); text-align: center;">
+                        2024년: 실매출 성장(+1.2% YoY), 거래액 답보(+0.6% YoY) → 2025년: 실매출 답보(+0.4% YoY), 거래액 성장(+2.3% YoY)<br>
+                        <strong style="color: var(--primary);">→ 2026년 실매출 성장 기대 (거래액은 선행지표)</strong>
+                    </p>
                 </div>
 
                 <div class="card">
@@ -671,6 +632,9 @@
                     <div class="chart-container">
                         <canvas id="retentionChart"></canvas>
                     </div>
+                    <p style="margin-top: 12px; font-size: 0.875rem; color: var(--gray-600); text-align: center;">
+                        2024년 등락 반복 (77~84%) → 2025년 안정적 상승 (82~85%) | 12월 기준 83.1% (+0.5%p YoY)
+                    </p>
                 </div>
             </div>
 
@@ -681,12 +645,16 @@
                 <div class="chart-container" style="height: 350px;">
                     <canvas id="yoyChart"></canvas>
                 </div>
+                <p style="margin-top: 12px; font-size: 0.875rem; color: var(--gray-600); text-align: center;">
+                    <strong>전체 기조:</strong> 2024년 <span class="tag tag-warning">방어적 (하락 방지)</span> → 2025년 <span class="tag tag-success">기반 강화 (기반 다지기)</span>
+                </p>
             </div>
         </section>
 
         <!-- Segment Analysis -->
         <section id="segment" class="section">
             <h2 class="section-title">세그먼트별 분석</h2>
+            <p style="color: var(--gray-600); font-size: 0.875rem; margin-bottom: 16px;">※ 분석 기준: service_3depth (상품 분류)</p>
 
             <!-- 탭 기반 지표별 분석 -->
             <div class="card">
@@ -826,8 +794,8 @@
                                     <tbody>
                                         <tr><td>자이언트플러스</td><td class="text-right"><span class="tag tag-danger">-54.8%</span></td></tr>
                                         <tr><td>빌더 호스팅</td><td class="text-right"><span class="tag tag-danger">-39.1%</span></td></tr>
-                                        <tr><td>무제한웹호스팅</td><td class="text-right"><span class="tag tag-danger">-34.3%</span></td></tr>
                                         <tr><td>가상서버호스팅</td><td class="text-right"><span class="tag tag-danger">-26.5%</span></td></tr>
+                                        <tr><td>단독웹호스팅</td><td class="text-right"><span class="tag tag-danger">-15.2%</span></td></tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -836,7 +804,7 @@
                 </div>
 
                 <div class="insight-box" style="margin-top: 20px;">
-                    <strong>핵심:</strong> 뉴아우토반으로 신규 사용자 반등 (+21.6%), 워드프레스/파워업은 전 지표 성장
+                    <strong>핵심:</strong> 뉴아우토반으로 신규 사용자 반등 (+21.6% YoY), 워드프레스/파워업은 전 지표 성장
                 </div>
             </div>
 
@@ -848,18 +816,24 @@
                 <div class="comparison-grid">
                     <div class="year-card year-2024">
                         <h4>2024년 주요 이슈</h4>
+                        <p style="font-size: 0.8rem; color: #991b1b; margin-bottom: 12px; font-style: italic;">
+                            "볼륨상품(아우토반, 빌더) 축소되었지만, 막을 기제가 없었음"
+                        </p>
                         <ul style="margin-left: 16px; font-size: 0.875rem;">
-                            <li>아우토반 신규 사용자 <span class="tag tag-danger">-18.6%</span></li>
-                            <li>빌더 호스팅 <span class="tag tag-danger">-36.6%</span></li>
-                            <li>신규 거래액 전체 <span class="tag tag-danger">-6.1%</span></li>
+                            <li>아우토반 신규 사용자 <span class="tag tag-danger">-18.6% YoY</span></li>
+                            <li>빌더 호스팅 <span class="tag tag-danger">-36.6% YoY</span></li>
+                            <li>신규 거래액 전체 <span class="tag tag-danger">-6.1% YoY</span></li>
                         </ul>
                     </div>
                     <div class="year-card year-2025">
                         <h4>2025년 개선 사항</h4>
+                        <p style="font-size: 0.8rem; color: #166534; margin-bottom: 12px; font-style: italic;">
+                            "웹호스팅 주력상품 위주로 볼륨 성장 달성"
+                        </p>
                         <ul style="margin-left: 16px; font-size: 0.875rem;">
-                            <li>아우토반 신규 사용자 <span class="tag tag-success">+21.6%</span> (반등)</li>
-                            <li>워드프레스 전체 거래액 <span class="tag tag-success">+27.1%</span></li>
-                            <li>파워업/트래픽 <span class="tag tag-success">+41.8%</span></li>
+                            <li>아우토반 신규 사용자 <span class="tag tag-success">+21.6% YoY</span> (반등)</li>
+                            <li>워드프레스 전체 거래액 <span class="tag tag-success">+27.1% YoY</span></li>
+                            <li>파워업/트래픽 <span class="tag tag-success">+41.8% YoY</span></li>
                         </ul>
                     </div>
                 </div>
@@ -887,13 +861,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td><strong>워드프레스</strong></td>
-                                <td>전체 거래액</td>
-                                <td class="text-center"><span class="tag tag-success">+29.5%</span></td>
-                                <td class="text-center"><span class="tag tag-success">+27.1%</span></td>
-                                <td class="text-center"><span class="trend-arrow up">↗️↗️</span></td>
-                                <td>핵심 성장 동력 (2년 연속)</td>
+                            <tr style="background: #f0fdf4;">
+                                <td><strong>아우토반 호스팅</strong></td>
+                                <td>신규 사용자</td>
+                                <td class="text-center"><span class="tag tag-danger">-18.6%</span></td>
+                                <td class="text-center"><span class="tag tag-success">+21.6%</span></td>
+                                <td class="text-center"><span class="trend-arrow up">↘️↗️</span></td>
+                                <td><strong style="color: var(--success);">반등 (뉴아우토반)</strong></td>
                             </tr>
                             <tr>
                                 <td><strong>파워업/트래픽</strong></td>
@@ -904,28 +878,28 @@
                                 <td>옵션 업셀 성공</td>
                             </tr>
                             <tr>
-                                <td><strong>SSL</strong></td>
-                                <td>전체 거래액</td>
-                                <td class="text-center"><span class="tag tag-success">+25.7%</span></td>
-                                <td class="text-center"><span class="tag tag-success">+8.4%</span></td>
-                                <td class="text-center"><span class="trend-arrow flat">↗️→</span></td>
-                                <td>성장 지속, 둔화 조짐</td>
-                            </tr>
-                            <tr style="background: #f0fdf4;">
-                                <td><strong>아우토반 호스팅</strong></td>
-                                <td>신규 사용자</td>
-                                <td class="text-center"><span class="tag tag-danger">-18.6%</span></td>
-                                <td class="text-center"><span class="tag tag-success">+21.6%</span></td>
-                                <td class="text-center"><span class="trend-arrow up">↘️↗️</span></td>
-                                <td><strong style="color: var(--success);">반등 (뉴아우토반)</strong></td>
-                            </tr>
-                            <tr>
                                 <td><strong>퀵서버호스팅</strong></td>
                                 <td>전체 거래액</td>
                                 <td class="text-center"><span class="tag tag-success">+1.1%</span></td>
                                 <td class="text-center"><span class="tag tag-success">+2.4%</span></td>
                                 <td class="text-center"><span class="trend-arrow flat">→↗️</span></td>
                                 <td>안정적 효자 상품</td>
+                            </tr>
+                            <tr>
+                                <td><strong>워드프레스</strong></td>
+                                <td>전체 거래액</td>
+                                <td class="text-center"><span class="tag tag-success">+29.5%</span></td>
+                                <td class="text-center"><span class="tag tag-success">+27.1%</span></td>
+                                <td class="text-center"><span class="trend-arrow up">↗️↗️</span></td>
+                                <td>핵심 성장 동력 (2년 연속)</td>
+                            </tr>
+                            <tr style="background: #fef2f2;">
+                                <td><strong>빌더 호스팅</strong></td>
+                                <td>신규 사용자</td>
+                                <td class="text-center"><span class="tag tag-danger">-36.6%</span></td>
+                                <td class="text-center"><span class="tag tag-danger">-39.1%</span></td>
+                                <td class="text-center"><span class="trend-arrow down">↘️↘️</span></td>
+                                <td><strong style="color: var(--danger);">2년 연속 급락</strong></td>
                             </tr>
                             <tr style="background: #fef2f2;">
                                 <td><strong>가상서버호스팅</strong></td>
@@ -935,13 +909,13 @@
                                 <td class="text-center"><span class="trend-arrow down">↗️↘️</span></td>
                                 <td><strong style="color: var(--danger);">하락 전환 주의</strong></td>
                             </tr>
-                            <tr style="background: #fef2f2;">
-                                <td><strong>빌더 호스팅</strong></td>
-                                <td>신규 사용자</td>
-                                <td class="text-center"><span class="tag tag-danger">-36.6%</span></td>
-                                <td class="text-center"><span class="tag tag-danger">-39.1%</span></td>
-                                <td class="text-center"><span class="trend-arrow down">↘️↘️</span></td>
-                                <td><strong style="color: var(--danger);">2년 연속 급락</strong></td>
+                            <tr>
+                                <td><strong>SSL</strong></td>
+                                <td>전체 거래액</td>
+                                <td class="text-center"><span class="tag tag-success">+25.7%</span></td>
+                                <td class="text-center"><span class="tag tag-success">+8.4%</span></td>
+                                <td class="text-center"><span class="trend-arrow flat">↗️→</span></td>
+                                <td>성장 지속, 둔화 조짐</td>
                             </tr>
                             <tr style="background: #fef2f2;">
                                 <td><strong>자이언트플러스</strong></td>
@@ -970,9 +944,9 @@
                     <div>
                         <h4 style="color: var(--primary-dark); margin-bottom: 12px;">📈 성장 패턴</h4>
                         <ul style="margin-left: 20px; color: var(--gray-700);">
-                            <li><strong>워드프레스:</strong> 2년 연속 +27% 이상 → 새로운 성장 엔진</li>
+                            <li><strong>워드프레스:</strong> 2년 연속 +27% YoY 이상 → 새로운 성장 엔진</li>
                             <li><strong>파워업/트래픽:</strong> 업셀 옵션 상품 폭발 성장</li>
-                            <li><strong>아우토반:</strong> 뉴아우토반으로 -18.6% → +21.6% 역전</li>
+                            <li><strong>아우토반:</strong> 뉴아우토반으로 -18.6% YoY → +21.6% YoY 역전</li>
                         </ul>
                     </div>
                     <div>
@@ -986,7 +960,7 @@
                 </div>
 
                 <div class="insight-box" style="margin-top: 20px; background: white;">
-                    <strong>핵심 메시지:</strong> 웹호스팅 주력상품(뉴아우토반 포함)의 성장이 전체 <strong>신규 사용자 +8.2%</strong>, <strong>라이브 사용자 +1.4%</strong> 볼륨 성장을 이끌어냄. 단, 엔트리 집중으로 ARPU 하락(-11%)은 2026년 업셀로 해결 필요.
+                    <strong>핵심 메시지:</strong> 웹호스팅 주력상품(뉴아우토반 포함)의 성장이 전체 <strong>신규 사용자 +8.2% YoY</strong>, <strong>라이브 사용자 +1.4% YoY</strong> 볼륨 성장을 이끌어냄. 단, 엔트리 집중으로 ARPU 하락(-11% YoY)은 2026년 업셀로 해결 필요.
                 </div>
             </div>
         </section>
@@ -999,7 +973,7 @@
             <div class="card">
                 <div class="card-header">
                     <h2>2025년 주요 업무 → 성과 지표 연결</h2>
-                    <span class="badge">Foundation 다지기</span>
+                    <span class="badge">기반 다지기</span>
                 </div>
 
                 <div class="table-container">
@@ -1074,8 +1048,8 @@
                                     라이브 사용자 유지
                                 </td>
                                 <td>
-                                    <span class="tag tag-success">83.1% (+0.5%p)</span><br>
-                                    <span style="font-size: 0.75rem; color: var(--gray-600);">Foundation 강화</span>
+                                    <span class="tag tag-success">83.1% (+0.5%p YoY)</span><br>
+                                    <span style="font-size: 0.75rem; color: var(--gray-600);">기반 강화</span>
                                 </td>
                             </tr>
                         </tbody>
@@ -1087,74 +1061,7 @@
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-header">
-                    <h2>2025년 신상품/리뉴얼 타임라인</h2>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>상품명</th>
-                                <th>출시일</th>
-                                <th>주요 특징</th>
-                                <th>전략적 의미</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>뉴아우토반</strong></td>
-                                <td>1/31</td>
-                                <td>500원~, 10G 광아우토반 리뉴얼</td>
-                                <td><span class="tag tag-success">엔트리 강화</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>퀵서버 스펙업</strong></td>
-                                <td>3/26</td>
-                                <td>메모리 업그레이드</td>
-                                <td><span class="tag tag-success">경쟁력 강화</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>단독웹클라우드</strong></td>
-                                <td>4/3</td>
-                                <td>리노드 기반, 뉴아우토반 연동</td>
-                                <td><span class="tag tag-success">클라우드 진출</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>애드센스 워드프레스</strong></td>
-                                <td>4/16</td>
-                                <td>AI 콘텐츠 도우미, PHP 8.4</td>
-                                <td><span class="tag tag-success">WP 생태계 시작</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>워드프레스 VPS</strong></td>
-                                <td>7/2</td>
-                                <td>독립 서버 기반 워드프레스</td>
-                                <td><span class="tag tag-success">프리미엄 WP</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>뉴매니지드 워드프레스</strong></td>
-                                <td>8/27</td>
-                                <td>트래픽/디스크 업, 뉴아우토반 연동</td>
-                                <td><span class="tag tag-success">WP 라인업 완성</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Quick 플러스업 Pro</strong></td>
-                                <td>11월</td>
-                                <td>8코어 퀵서버</td>
-                                <td><span class="tag tag-success">고성능 확대</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Quick 스케일업 Pro</strong></td>
-                                <td>12월</td>
-                                <td>20코어 퀵서버 (중고서버 활용)</td>
-                                <td><span class="tag tag-success">가격 경쟁력</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
+            </section>
 
         <!-- Challenges -->
         <section id="challenges" class="section">
@@ -1166,14 +1073,14 @@
                     <span class="badge" style="background: var(--warning);">핵심 과제</span>
                 </div>
 
-                <div class="message-box">2025년 상황: 볼륨 성장 ✅, 수익성 하락 ❌
+                <div class="message-box"><strong>2025년 상황: 볼륨 성장 ✅, 수익성 하락 ❌</strong>
 
-웹호스팅 주력상품 성장 (+5.4%)
+웹호스팅 주력상품 성장 (+5.4% YoY)
         ↓
-신규 사용자 볼륨 폭발 (+8.2%)
-라이브 사용자 V자 반등 (+1.4%)
+신규 사용자 볼륨 폭발 (+8.2% YoY)
+라이브 사용자 V자 반등 (+1.4% YoY)
         ↓
-BUT 엔트리 집중 → 신규 ARPPU ↓ (-11%)</div>
+BUT 엔트리 집중 → 신규 ARPPU ↓ (-11% YoY)</div>
 
                 <h4 style="margin: 20px 0 12px;">구조적 원인</h4>
                 <ul style="margin-left: 20px; color: var(--gray-700);">
@@ -1195,14 +1102,27 @@ BUT 엔트리 집중 → 신규 ARPPU ↓ (-11%)</div>
                 </div>
 
                 <h4 style="margin: 20px 0 12px;">해결 방향</h4>
-                <ol style="margin-left: 20px; color: var(--gray-700);">
-                    <li><strong>업셀 경로 강화:</strong> 뉴아우토반 → 무제한 → 퀵서버/VPS 전환 유도</li>
-                    <li><strong>프리미엄 신규 직접 유입:</strong> 퀵서버, WP VPS 등 고가 상품 마케팅</li>
-                    <li><strong>번들/부가서비스:</strong> SSL, 도메인, Biz솔루션 결합</li>
-                </ol>
+                <div class="comparison-grid" style="margin-top: 16px;">
+                    <div style="background: #f0fdf4; padding: 16px; border-radius: 8px; border-left: 4px solid var(--success);">
+                        <h5 style="color: #166534; margin-bottom: 12px;">1. 기반 활용한 확장</h5>
+                        <ul style="margin-left: 16px; color: var(--gray-700); font-size: 0.875rem;">
+                            <li><strong>업셀 경로 강화:</strong> 뉴아우토반 → 무제한 → 퀵서버/VPS 전환 유도</li>
+                            <li><strong>프리미엄 신규 직접 유입:</strong> 퀵서버, WP VPS 등 고가 상품 마케팅</li>
+                            <li><strong>번들/부가서비스:</strong> SSL, 도메인, Biz솔루션 결합</li>
+                        </ul>
+                    </div>
+                    <div style="background: #eff6ff; padding: 16px; border-radius: 8px; border-left: 4px solid var(--primary);">
+                        <h5 style="color: var(--primary-dark); margin-bottom: 12px;">2. Next Infra 준비</h5>
+                        <ul style="margin-left: 16px; color: var(--gray-700); font-size: 0.875rem;">
+                            <li><strong>AI 호스팅:</strong> 컨테이너 기반 차세대 호스팅 인프라 구축</li>
+                            <li><strong>GEO 서비스:</strong> 워드프레스 생태계 확장 및 콘텐츠 인프라 강화</li>
+                            <li><strong>클라우드 전환:</strong> 리노드 기반 클라우드 호스팅 확대</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="insight-box">
-                    <strong>2026년 과제:</strong> 2025년에 확보한 볼륨(+8.2% 신규, +1.4% 라이브)을 기반으로 <strong>ARPU 성장</strong>을 이끌어내는 해가 되어야 함
+                    <strong>2026년 과제:</strong> 2025년에 확보한 볼륨(+8.2% YoY 신규, +1.4% YoY 라이브)을 기반으로 <strong>ARPU 성장</strong>을 이끌어내는 해가 되어야 함
                 </div>
             </div>
 
@@ -1246,151 +1166,6 @@ BUT 엔트리 집중 → 신규 ARPPU ↓ (-11%)</div>
             </div>
         </section>
 
-        <!-- 2026 Direction -->
-        <section id="direction" class="section">
-            <h2 class="section-title">2026년 방향성</h2>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2>전략적 전환</h2>
-                </div>
-                <div class="comparison-grid">
-                    <div style="background: #fef2f2; padding: 20px; border-radius: 8px; border: 2px solid #fecaca;">
-                        <h4 style="color: #991b1b; margin-bottom: 12px;">AS-IS (2025)</h4>
-                        <p style="font-size: 1.125rem; font-weight: 600; margin-bottom: 8px;">Legacy Server Rental Company</p>
-                        <ul style="font-size: 0.875rem; color: var(--gray-600); margin-left: 16px;">
-                            <li>역할: 하청/임대 (Subcontractor)</li>
-                            <li>시장: 축소, 가격경쟁</li>
-                            <li>판매: 서버/공간</li>
-                        </ul>
-                    </div>
-                    <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; border: 2px solid #bbf7d0;">
-                        <h4 style="color: #166534; margin-bottom: 12px;">TO-BE (2026~)</h4>
-                        <p style="font-size: 1.125rem; font-weight: 600; margin-bottom: 8px;">AI Service Standard Runtime Platform</p>
-                        <ul style="font-size: 0.875rem; color: var(--gray-600); margin-left: 16px;">
-                            <li>역할: 생태계 중심 (창작/운영/수익화)</li>
-                            <li>시장: 가치사슬 선도</li>
-                            <li>판매: AI 서비스 성공</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2>성공 방정식</h2>
-                </div>
-                <div class="formula-box" style="font-size: 1rem;">
-                    안정적인 고객 기반(Foundation) × 새로운 성장 기회 = 수익 성장
-                </div>
-                <p style="text-align: center; color: var(--gray-600); font-size: 0.875rem; margin-bottom: 20px;">
-                    기반이 탄탄해야, 그 위에서 성장할 수 있다
-                </p>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>요소</th>
-                                <th>의미</th>
-                                <th>2026년 추진 방향</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Foundation</strong></td>
-                                <td>안정적 고객 기반, 서비스 신뢰</td>
-                                <td>기대연장율 85%, ARPU 회복</td>
-                            </tr>
-                            <tr>
-                                <td><strong>AI Hosting</strong></td>
-                                <td>컨테이너 기반 호스팅</td>
-                                <td>클라우드 호스팅 확대</td>
-                            </tr>
-                            <tr>
-                                <td><strong>콘텐츠 인프라</strong></td>
-                                <td>워드프레스 생태계</td>
-                                <td>WP 브랜딩 강화</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2>2026년 핵심 과제</h2>
-                    <span class="badge">볼륨 기반 ARPU 성장의 해</span>
-                </div>
-
-                <div class="message-box">2025년 성과를 2026년에 수확하는 구조
-
-[2025년 자산]                    [2026년 수확]
-
-거래액 +2.3% 성장     ───────→   실매출 성장 기대
-(선행지표)                       (후행지표 반영)
-
-신규 사용자 +8.2%    ───────→   업셀 타겟 풀 확대
-라이브 사용자 +1.4%  ───────→   연장 매출 기반 확대
-
-엔트리 집중 (ARPU↓)  ───────→   ARPU 회복 (업셀 강화)</div>
-
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>우선순위</th>
-                                <th>축</th>
-                                <th>과제</th>
-                                <th>목표</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><strong>Foundation</strong></td>
-                                <td>기대연장율 개선</td>
-                                <td>85%</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><strong>Foundation</strong></td>
-                                <td>업셀 경로 강화 → ARPU 회복</td>
-                                <td>신규 ARPPU +10%</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><strong>Foundation</strong></td>
-                                <td>프리미엄 신규 유입 채널</td>
-                                <td>퀵서버/VPS 마케팅</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><strong>AI Hosting</strong></td>
-                                <td>컨테이너 기반 호스팅 확대</td>
-                                <td>Q3 런칭 준비</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><strong>GEO</strong></td>
-                                <td>WP 브랜딩 + 콘텐츠 구조화</td>
-                                <td>인지도 확보</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td><strong>Foundation</strong></td>
-                                <td>정부 클라우드 바우처 파트너</td>
-                                <td>등록 완료</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="insight-box">
-                    <strong>핵심 메시지:</strong> 2025년에 확보한 <strong>볼륨 자산</strong>(신규 +8.2%, 라이브 +1.4%)과 <strong>거래액 성장</strong>(+2.3%)을 2026년 <strong>실매출 성장</strong>과 <strong>ARPU 회복</strong>으로 연결하는 것이 핵심
-                </div>
-            </div>
-        </section>
-
         <!-- Conclusion -->
         <section class="section">
             <h2 class="section-title">결론</h2>
@@ -1408,7 +1183,7 @@ BUT 엔트리 집중 → 신규 ARPPU ↓ (-11%)</div>
                     </div>
                     <div style="background: #dbeafe; padding: 20px; border-radius: 8px; text-align: center;">
                         <h4 style="color: var(--primary-dark); margin-bottom: 8px;">2025년</h4>
-                        <p style="font-size: 1rem; font-weight: 600; color: var(--primary-dark);">Foundation 강화의 해</p>
+                        <p style="font-size: 1rem; font-weight: 600; color: var(--primary-dark);">기반 강화의 해</p>
                         <p style="font-size: 0.75rem; color: var(--gray-600); margin-top: 8px;">볼륨 기반 확보<br>성장 기반 마련</p>
                     </div>
                     <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; text-align: center;">
@@ -1418,27 +1193,27 @@ BUT 엔트리 집중 → 신규 ARPPU ↓ (-11%)</div>
                     </div>
                 </div>
 
-                <div class="message-box" style="margin-top: 24px;">2025년 성과 → 2026년 목표
+                <div class="message-box" style="margin-top: 24px;"><strong>2025년 성과 → 2026년 목표</strong>
 
-[2025년 성과]              [2026년 목표]
+[2025년 성과]                    [2026년 목표]
 
-거래액 +2.3%        →      실매출 성장으로 연결
-신규 사용자 +8.2%   →      업셀 대상 풀 확대
-라이브 +1.4%        →      연장 매출 기반 확대
-기대연장율 83.1%    →      85% 달성
+거래액 +2.3% YoY         →      실매출 성장으로 연결
+신규 사용자 +8.2% YoY    →      업셀 대상 풀 확대
+라이브 +1.4% YoY         →      연장 매출 기반 확대
+기대연장율 83.1%         →      85% 달성
 
-ARPU 하락 (-11%)    →      ARPU 회복 (업셀 강화)
+ARPU 하락 (-11% YoY)     →      ARPU 회복 (업셀 강화)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-결론: 2025년은 Foundation을 다진 해, 2026년은 그 기반으로 수익성을 성장시키는 해</div>
+결론: 2025년은 기반을 다진 해, 2026년은 그 기반으로 수익성을 성장시키는 해</div>
             </div>
         </section>
     </div>
 
     <footer class="footer">
-        <p>2025년 연간 호스팅 보고서 | 카페24 호스팅팀</p>
-        <p>Draft v3 | 데이터 기준: 2024.01 ~ 2025.12 (1-12월)</p>
+        <p>2025년 Annual Report | 호스팅플랫폼팀</p>
+        <p>Draft v4 | 데이터 기준: 2024.01 ~ 2025.12 (1-12월)</p>
     </footer>
 
     <script>
@@ -1668,20 +1443,20 @@ ARPU 하락 (-11%)    →      ARPU 회복 (업셀 강화)
             });
         });
 
-        // 상품별 트렌드 차트
+        // 상품별 트렌드 차트 (갭 기준 정렬: 아우토반 > 파워업 > 퀵서버 > 워드프레스 > 빌더 > 가상서버 > SSL > 자이언트)
         new Chart(document.getElementById('productTrendChart'), {
             type: 'bar',
             data: {
-                labels: ['워드프레스', '파워업/트래픽', 'SSL', '아우토반', '퀵서버', '가상서버', '빌더', '자이언트플러스'],
+                labels: ['아우토반', '파워업/트래픽', '퀵서버', '워드프레스', '빌더', '가상서버', 'SSL', '자이언트플러스'],
                 datasets: [
                     {
                         label: '2023→2024 YoY (%)',
-                        data: [29.5, 23.7, 25.7, -18.6, 1.1, 5.9, -36.6, -2.2],
+                        data: [-18.6, 23.7, 1.1, 29.5, -36.6, 5.9, 25.7, -2.2],
                         backgroundColor: 'rgba(239, 68, 68, 0.7)',
                     },
                     {
                         label: '2024→2025 YoY (%)',
-                        data: [27.1, 41.8, 8.4, 21.6, 2.4, -6.0, -39.1, -54.8],
+                        data: [21.6, 41.8, 2.4, 27.1, -39.1, -6.0, 8.4, -54.8],
                         backgroundColor: 'rgba(16, 185, 129, 0.7)',
                     }
                 ]
